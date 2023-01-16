@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+body {
+   max-width: 1872px;
+   margin: auto;
+   background-color: #000;
+   color: white;
+   overflow-x: hidden;
+}
+
+.nav {
+   background-image: linear-gradient(#141414, #14141457 70%, transparent);
+   transition: all linear 200ms;
+}
+
+.soildNav {
+   background-color: #141414;
+}
+
+.textShadow {
+   color: #fff;
+   text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.btn {
+   backdrop-filter: blur(12px);
+}
+
+.btn:hover {
+   background-color: #66666680;
+   backdrop-filter: blur(14px);
+}
+
+.transitionalGradiant {
+   background-image: linear-gradient(to top, #181818 20%, transparent);
+}
+
+.mainGradiant {
+   background-image: linear-gradient(to top, #141414 90%, #161616, transparent);
+}
+
+.z-index-transition {
+   z-index: 0;
+}
+
+.z-index-transition:hover {
+   z-index: 10;
+}
+
+::selection {
+   color: rgb(207, 46, 46);
+}
+
+body::-webkit-scrollbar {
+   display: block;
+   width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+   border-left: 3px solid #141414;
+   border-right: 3px solid #141414;
+   background-color: #0e0d0d;
+}
+
+body::-webkit-scrollbar-track {
+   border-left: 3px solid #141414;
+   border-right: 3px solid #141414;
+   background-color: #414141;
+}
+
+::-webkit-scrollbar {
+   display: none;
+}
